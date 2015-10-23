@@ -1,0 +1,40 @@
+////////////////////// Grid variables
+$num-cols: 12;
+$gutter-width: 1rem;
+
+// Layout helpers
+$container-max-width: 1280px;
+$section-padding: 1rem;
+
+// Media Query Ranges
+$small-screen: 600px;
+$medium-screen: 960px;
+$large-screen: 1140px;
+$small-and-up: "only screen and (min-width : #{$small-screen})";
+$medium-and-up: "only screen and (min-width : #{$medium-screen})";
+$large-and-up: "only screen and (min-width : #{$large-screen})";
+/////////////////////////////
+
+//////////////////////// Typography
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+$base-spacing: $base-line-height * 1rem;
+$base-font: 'Helvetica Neue', sans-serif;
+$heading-font: $base-font;
+
+$h1-scale: 2.50;
+$h2-scale: 2.00;
+$h3-scale: 1.50;
+$h4-scale: 1.25;
+$h5-scale: 1.00;
+$h6-scale: 0.80;
+
+// Flow Text
+$range : $large-screen - $small-screen;
+$intervals: 20;
+$interval-size: $range / $intervals;
+////////////////////////
+
+// Components
+$button-color: color("accent");

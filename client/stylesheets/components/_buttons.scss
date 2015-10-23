@@ -1,0 +1,48 @@
+$button-color: color("accent") !default;
+
+.btn {
+  cursor: pointer;
+  outline: none;
+
+  padding: $base-spacing;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s;
+
+  border: 2px solid $button-color;
+  background: transparent;
+
+  color: $button-color;
+  font-weight: 700;
+
+  i, img {
+    padding-right: $base-spacing;
+  }
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn:active {
+  top: 2px;
+}
+
+.btn:hover {
+  color: color("primary", "dark");
+  background: $button-color;
+  transition: all 0s;
+}
+
+@mixin button-colors($primary, $secondary) {
+  border: 2px solid $primary;
+  color: $primary;
+
+  &:hover {
+    color: $secondary;
+    background: $primary;
+  }
+}
