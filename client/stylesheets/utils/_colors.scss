@@ -60,7 +60,8 @@ $colors: (
 }
 }
 
-// usage: color("primary", "light")
+// usage: color('primary')
+// usage: color('primary', 'light')
 @function color($color, $type:"base") {
   @if map-has-key($colors, $color) {
     $curr_color: map-get($colors, $color);
